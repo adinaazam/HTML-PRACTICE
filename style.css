@@ -1,9 +1,22 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+.navbar {
+    animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .navbar {
@@ -18,10 +31,30 @@
     top: 0;
     z-index: 100;
 }
+.navbar {
+    animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 .logo {
     font-size: 28px;
     font-weight: bold;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
 .nav-links a {
@@ -45,10 +78,22 @@
 }
 
 .banner img {
+    animation: zoomIn 1.2s ease;
     width: 100%;
     height: 500px;
     object-fit: cover;
 }
+@keyframes zoomIn {
+    from {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 
 .heading {
     text-align: center;
@@ -68,6 +113,7 @@
 
 
 .product {
+    animation: fadeUp 0.9s ease forwards;
     background: #fff5f9;
     border: 2px solid #ffb3cc;
     padding: 20px;
@@ -75,6 +121,16 @@
     text-align: center;
     transition: 0.3s ease;
     box-shadow: 0 4px 10px rgba(255, 80, 140, 0.15);
+}
+@keyframes fadeUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .product img {
@@ -146,3 +202,16 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
