@@ -5,8 +5,108 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Contact - HUDA BEAUTY</title>
 <link rel="stylesheet" href="style.css" />
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+}
+
+.heading {
+  text-align: center;
+  margin: 30px 0;
+  color: #ff4d88;
+}
+
+
+.contact-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 1;
+  background: #fff5f9;
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px solid #ffb3cc;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff4d88;
+}
+
+
+.btn-cart {
+  margin-top: 20px;
+  background: #ff4d88;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-cart:hover {
+  background: #e6005c;
+}
+
+
+.contact-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-info h2 {
+  color: #ff4d88;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  background: #ff4d88;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+</style>
+
 </head>
 <body>
+
 <header class="navbar">
 <div class="logo">HUDA BEAUTY</div>
 <nav class="nav-links">
@@ -18,29 +118,39 @@
 <a href="products.html" class="btn-nav">Shop Now</a>
 </header>
 
-
 <h1 class="heading">Contact Us</h1>
 
+<div class="contact-container">
 
-<form style="width:80%; margin:auto; background:#fff5f9; padding:20px; border-radius:10px; border:2px solid #ffb3cc;">
+
+<form class="contact-form">
 <label>Name</label>
-<input type="text" placeholder="Enter your name" />
-
+<input type="text" placeholder="Enter your name" required />
 
 <label>Email</label>
-<input type="email" placeholder="Enter your email" />
-
+<input type="email" placeholder="Enter your email" required />
 
 <label>Message</label>
-<textarea placeholder="Your message" rows="5"></textarea>
+<textarea placeholder="Your message" rows="5" required></textarea>
 
-
-<button class="btn-cart" style="width:150px;">Send</button>
+<button class="btn-cart">Send Message</button>
 </form>
 
+
+<div class="contact-info">
+<h2>Get in Touch</h2>
+<p>📍 Karachi, Pakistan</p>
+<p>📞 +92 300 1234567</p>
+<p>📧 support@hudabeauty.com</p>
+
+<p>We’d love to hear from you! Send us your queries and we will respond as soon as possible.</p>
+</div>
+
+</div>
 
 <footer>
 <p>© 2025 HUDA BEAUTY — All Rights Reserved.</p>
 </footer>
+
 </body>
 </html>
